@@ -9,7 +9,9 @@ webapp/
 webapp/index.html
 webapp/manifest.json
 webapp/index.js
+
 webapp/view/App.view.xml
+webapp/controller/App.controller.js
 
 npm i -D @ui5/cli
 ui5 init
