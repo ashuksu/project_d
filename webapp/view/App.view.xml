@@ -4,30 +4,32 @@
     xmlns:mvc="sap.ui.core.mvc"
     displayBlock="true"
 >
-    <App>
-        <pages>
-            <Page title="{i18n>homePageTitle}">
-                <content>
-                    <Panel headerText="{i18n>homePaneTitle}">
-                        <content>
-                            <Button
-                                text="{= ${i18n>buttonText}.replace('{0}', ${/recipient/do}) }"
-                                press=".onShowHello"
-                            />
-                            <Input
-                                value="{/recipient/name}"
-                                placeholder="{i18n>inputPlaceholder}"
-                                description="{
+    <Shell>
+        <App>
+            <pages>
+                <Page title="{i18n>homePageTitle}">
+                    <content>
+                        <Panel headerText="{i18n>homePaneTitle}">
+                            <content>
+                                <Button
+                                    text="{= ${i18n>buttonText}.replace('{0}', ${/recipient/do}) }"
+                                    press=".onShowHello"
+                                />
+                                <Input
+                                    value="{/recipient/name}"
+                                    placeholder="{i18n>inputPlaceholder}"
+                                    description="{
                                     parts: ['i18n>inputDescription', '/recipient/name'],
                                     formatter: '.formatting'
                                 }"
-                                valueLiveUpdate="true"
-                                width="60%"
-                            />
-                        </content>
-                    </Panel>
-                </content>
-            </Page>
-        </pages>
-    </App>
+                                    valueLiveUpdate="true"
+                                    width="60%"
+                                />
+                            </content>
+                        </Panel>
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
 </mvc:View>
