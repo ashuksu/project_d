@@ -42,6 +42,13 @@
       "viewName": "project_d.view.App",
       "type": "XML",
       "id": "app"
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
     }
   }
 }

@@ -5,7 +5,7 @@
     displayBlock="true"
 >
     <Shell>
-        <App>
+        <App class="myAppDemoWT">
             <pages>
                 <Page title="{i18n>homePageTitle}">
                     <content>
@@ -18,7 +18,7 @@
                                 <Button
                                     text="{= ${i18n>buttonText}.replace('{0}', ${/recipient/do}) }"
                                     press=".onShowHello"
-                                    class="sapUiSmallMarginEnd"
+                                    class="sapUiSmallMarginEnd myCustomButton"
                                 />
                                 <Input
                                     value="{/recipient/name}"
@@ -26,12 +26,12 @@
                                     valueLiveUpdate="true"
                                     width="60%"
                                 />
-                                <Text
-                                    text="{
+                                <FormattedText
+                                    htmlText="{
                                         parts: ['i18n>inputDescription', '/recipient/name'],
                                         formatter: '.formatting'
                                     }"
-                                    class="sapUiSmallMargin"
+                                    class="sapUiSmallMargin sapThemeHightlight-asColor myCustomText"
                                 />
                             </content>
                         </Panel>
