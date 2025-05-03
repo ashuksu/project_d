@@ -41,6 +41,7 @@
     "rootView": {
       "viewName": "project_d.view.App",
       "type": "XML",
+      "async": true,
       "id": "app"
     },
     "resources": {

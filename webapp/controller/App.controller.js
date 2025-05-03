@@ -5,9 +5,7 @@ sap.ui.define(
 
     return Controller.extend("project_d.controller.App", {
       formatting(sText, ...args) {
-        if (!sText) {
-          return;
-        }
+        if (!sText) return;
 
         for (let i = 0; i < args.length; i++) {
           if (sText.includes(`{${i}}`)) {
