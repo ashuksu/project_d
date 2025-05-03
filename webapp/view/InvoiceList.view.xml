@@ -27,6 +27,7 @@
                     }
                 }"
                 numberUnit="{view>/currency}"
+                numberState="{= ${invoice>ExtendedPrice} > 50 ? 'Error' : ${invoice>ExtendedPrice} > 9 ? 'Warning' : ${invoice>ExtendedPrice} > 8 ? 'Success' : ${invoice>ExtendedPrice} &lt; 3 ?  'None' : 'Information' }"
             />
         </items>
     </List>
