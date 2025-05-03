@@ -25,6 +25,14 @@ sap.ui.define(
       formatting(...args) {
         return Helpers.formatting(...args);
       },
+
+      async onOpenDialog() {
+        this.oDialog ??= await this.loadFragment({
+          name: "project_d.view.HelloDialog",
+        });
+
+        this.oDialog.open();
+      },
     });
   }
 );

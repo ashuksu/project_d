@@ -2,7 +2,6 @@
     controllerName="project_d.controller.HelloPanel"
     xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc"
-    displayBlock="true"
 >
     <Panel
         headerText="{i18n>homePaneTitle}"
@@ -11,7 +10,13 @@
     >
         <content>
             <Button
-                text="{= ${i18n>buttonText}.replace('{0}', ${/recipient/do}) }"
+                id="helloDialogButton"
+                text="{i18n>openDialogButtonText}"
+                press=".onOpenDialog"
+                class="sapUiSmallMarginEnd myCustomButton"
+            />
+            <Button
+                text="{= ${i18n>buttonText}.replaceAll('{0}', ${/recipient/do}) }"
                 press=".onShowHello"
                 class="sapUiSmallMarginEnd myCustomButton"
             />
