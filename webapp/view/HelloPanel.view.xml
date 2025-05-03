@@ -11,12 +11,14 @@
         <content>
             <Button
                 id="helloDialogButton"
+                icon="sap-icon://action"
                 text="{i18n>openDialogButtonText}"
                 press=".onOpenDialog"
                 class="sapUiSmallMarginEnd myCustomButton"
             />
             <Button
                 text="{= ${i18n>buttonText}.replaceAll('{0}', ${/recipient/do}) }"
+                icon="sap-icon://activate"
                 press=".onShowHello"
                 class="sapUiSmallMarginEnd myCustomButton"
             />
