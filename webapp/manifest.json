@@ -2,7 +2,13 @@
   "_version": "1.65.0",
   "sap.app": {
     "id": "project_d",
-    "i18n": "i18n/i18n.properties",
+    "i18n": {
+      "bundleUrl": "i18n/i18n.properties",
+      "supportedLocales": [
+        ""
+      ],
+      "fallbackLocale": ""
+    },
     "title": "{{appTitle}}",
     "description": "{{appDescription}}",
     "type": "application",
@@ -36,6 +42,10 @@
           ],
           "fallbackLocale": ""
         }
+      },
+      "invoice": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "data/Invoices.json"
       }
     },
     "rootView": {

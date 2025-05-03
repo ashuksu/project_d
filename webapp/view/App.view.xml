@@ -9,7 +9,20 @@
             <pages>
                 <Page title="{i18n>homePageTitle}">
                     <content>
-                        <mvc:XMLView viewName="project_d.view.HelloPanel"/>
+                        <Panel
+                            headerText="{i18n>helloPanelTitle}"
+                            class="sapUiResponsiveMargin"
+                            width="auto"
+                        >
+                            <content>
+                                <mvc:XMLView
+                                    viewName="project_d.view.HelloPanel"
+                                />
+                                <mvc:XMLView
+                                    viewName="project_d.view.InvoiceList"
+                                />
+                            </content>
+                        </Panel>
                     </content>
                 </Page>
             </pages>
