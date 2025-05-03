@@ -2,7 +2,7 @@ sap.ui.define(
   [
     "sap/ui/core/mvc/Controller",
     "sap/m/MessageToast",
-    "project_d/utils/Helpers",
+    "project_d/model/Helpers",
   ],
   (Controller, MessageToast, Helpers) => {
     "use strict";
@@ -24,8 +24,8 @@ sap.ui.define(
 
         MessageToast.show(sMsg);
       },
-      formatting(...args) {
-        return Helpers.formatting(...args);
+      formatting(a, ...b) {
+        return Helpers.formatting(a, ...b);
       },
 
       async onOpenDialog() {
