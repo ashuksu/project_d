@@ -1,0 +1,30 @@
+sap.ui.define(
+  [
+    "sap/ui/core/mvc/Controller",
+    "sap/m/MessageToast",
+    "project_d/utils/Helpers",
+  ],
+  (Controller, MessageToast, Helpers) => {
+    "use strict";
+
+    return Controller.extend("project_d.controller.HelloPanel", {
+      onInit() {
+        // How to use directly in Controller
+        // console.log(Helpers.formatting("Hello, {0}!", "New World"));
+      },
+      onShowHello() {
+        const oView = this.getView();
+        const oData = oView.getModel();
+        const oBundl = oView.getModel("i18n").getResourceBundle();
+
+        const sRecipientName = oData.getProperty("/recipient/name");
+        const sMsg = oBundl.getText("buttonTextsMsg", [sRecipientName]);
+
+        MessageToast.show(sMsg);
+      },
+      formatting(...args) {
+        return Helpers.formatting(...args);
+      },
+    });
+  }
+);

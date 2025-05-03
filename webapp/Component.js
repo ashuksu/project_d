@@ -17,6 +17,7 @@ sap.ui.define(
             do: "Press here",
           },
         };
+
         const oModel = new JSONModel(oData);
         this.setModel(oModel);
       },

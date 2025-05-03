@@ -9,32 +9,7 @@
             <pages>
                 <Page title="{i18n>homePageTitle}">
                     <content>
-                        <Panel
-                            headerText="{i18n>homePaneTitle}"
-                            class="sapUiResponsiveMargin"
-                            width="auto"
-                        >
-                            <content>
-                                <Button
-                                    text="{= ${i18n>buttonText}.replace('{0}', ${/recipient/do}) }"
-                                    press=".onShowHello"
-                                    class="sapUiSmallMarginEnd myCustomButton"
-                                />
-                                <Input
-                                    value="{/recipient/name}"
-                                    placeholder="{i18n>inputPlaceholder}"
-                                    valueLiveUpdate="true"
-                                    width="60%"
-                                />
-                                <FormattedText
-                                    htmlText="{
-                                        parts: ['i18n>inputDescription', '/recipient/name'],
-                                        formatter: '.formatting'
-                                    }"
-                                    class="sapUiSmallMargin sapThemeHightlight-asColor myCustomText"
-                                />
-                            </content>
-                        </Panel>
+                        <mvc:XMLView viewName="project_d.view.HelloPanel"/>
                     </content>
                 </Page>
             </pages>
