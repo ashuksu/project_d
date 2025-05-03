@@ -9,6 +9,8 @@ sap.ui.define(
 
     return Controller.extend("project_d.controller.HelloPanel", {
       onInit() {
+        this.oDialog = null;
+
         // How to use directly in Controller
         // console.log(Helpers.formatting("Hello, {0}!", "New World"));
       },
@@ -32,6 +34,9 @@ sap.ui.define(
         });
 
         this.oDialog.open();
+      },
+      onCloseDialog() {
+        this.byId("helloDialog").close();
       },
     });
   }
