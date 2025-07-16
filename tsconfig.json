@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "ESNext",
+    "allowJs": true,
+    "checkJs": true,
+    "baseUrl": ".",
+    "types": ["@sapui5/types", "openui5"]
+  },
+  "include": ["webapp/**/*"]
+}
