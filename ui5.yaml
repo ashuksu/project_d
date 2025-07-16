@@ -3,8 +3,8 @@ metadata:
   name: project_d
 type: application
 framework:
-  name: OpenUI5
-  version: "1.135.0"
+  name: SAPUI5
+  version: "1.138.0"
   libraries:
     - name: sap.m
     - name: sap.ui.core
