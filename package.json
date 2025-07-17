@@ -4,7 +4,9 @@
     "author": "denliu",
     "description": "The UI5 walkthrough application from scratch using the Walkthrough Tutorial (JavaScript)",
     "scripts": {
-        "start": "ui5 serve -o index.html"
+        "start": "ui5 serve -o index.html",
+        "build": "ui5 build --all",
+        "gh-pages": "cd dist && git add . -f && git commit -am \"Update GH-Pages build $(date +'%F %T')\" || true && git push -u origin gh-pages --force && cd .."
     },
     "devDependencies": {
         "@sapui5/types": "^1.138.0",
