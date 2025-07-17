@@ -60,6 +60,8 @@
           "uri": "css/style.css"
         }
       ]
-    }
+    },
+    "flexEnabled": true,
+    "contentDensities": {}
   }
 }
