@@ -2,6 +2,12 @@
   "_version": "1.65.0",
   "sap.app": {
     "id": "project_d",
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "type": "application",
+    "applicationVersion": {
+      "version": "1.0.0"
+    },
     "i18n": {
       "bundleUrl": "i18n/i18n.properties",
       "supportedLocales": [
@@ -9,11 +15,14 @@
       ],
       "fallbackLocale": ""
     },
-    "title": "{{appTitle}}",
-    "description": "{{appDescription}}",
-    "type": "application",
-    "applicationVersion": {
-      "version": "1.0.0"
+    "dataSources": {
+      "invoiceRemote": {
+        "uri": "V2/Northwind/Northwind.svc/",
+        "type": "OData",
+        "settings": {
+          "odataVersion": "2.0"
+        }
+      }
     }
   },
   "sap.ui": {
@@ -44,8 +53,7 @@
         }
       },
       "invoice": {
-        "type": "sap.ui.model.json.JSONModel",
-        "uri": "data/Invoices.json"
+        "dataSource": "invoiceRemote"
       }
     },
     "rootView": {
