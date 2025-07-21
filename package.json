@@ -1,18 +1,19 @@
 {
-    "name": "project_d",
-    "version": "1.0.0",
-    "author": "denliu",
-    "description": "The UI5 walkthrough application from scratch using the Walkthrough Tutorial (JavaScript)",
-    "scripts": {
-        "start": "ui5 serve -o index.html",
-        "build": "ui5 build --all",
-        "gh-pages-init": "mkdir -p gh-pages && cd gh-pages && git init && git remote add origin git@github.com:ashuksu/project_d.git && git branch -m 'gh-pages' && cd ..",
-        "gh-pages": "npm run build && cp -a gh-pages/. dist/ && cd dist && git add . -f && git commit -am \"Update GH-Pages build $(date +'%F %T')\" || true && git push -u origin gh-pages --force && cd .."
-    },
-    "devDependencies": {
-        "@sapui5/types": "^1.138.0",
-        "@types/openui5": "^1.138.0",
-        "@ui5/cli": "^4",
-        "ui5-middleware-simpleproxy": "^3.4.3"
-    }
+  "name": "project_d",
+  "version": "1.0.0",
+  "author": "denliu",
+  "description": "The UI5 walkthrough application from scratch using the Walkthrough Tutorial (JavaScript)",
+  "scripts": {
+    "start": "ui5 serve -o index.html",
+    "start-test": "ui5 serve -o test/mockServer.html",
+    "build": "ui5 build --all",
+    "gh-pages-init": "mkdir -p gh-pages && cd gh-pages && git init && git remote add origin git@github.com:ashuksu/project_d.git && git branch -m 'gh-pages' && cd ..",
+    "gh-pages": "npm run build && cp -a gh-pages/. dist/ && cd dist && git add . -f && git commit -am \"Update GH-Pages build $(date +'%F %T')\" || true && git push -u origin gh-pages --force && cd .."
+  },
+  "devDependencies": {
+    "@sapui5/types": "^1.138.0",
+    "@types/openui5": "^1.138.0",
+    "@ui5/cli": "^4",
+    "ui5-middleware-simpleproxy": "^3.4.3"
+  }
 }
