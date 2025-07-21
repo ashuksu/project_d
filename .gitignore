@@ -30,4 +30,4 @@ Thumbs.db
 !/.env.example
 
 # Tests
-test/
+#test/
