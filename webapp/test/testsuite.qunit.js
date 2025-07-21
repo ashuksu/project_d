@@ -20,6 +20,9 @@ sap.ui.define(() => {
             "unit/unitTests": {
                 title: "Project D - Unit Tests",
                 module: "./unit/model/formatter"
+            },
+            "integration/opaTests": {
+                title: "Project D - Integration Tests"
             }
         }
     };
