@@ -1,6 +1,7 @@
 <mvc:View
     controllerName="project_d.controller.Detail"
     xmlns="sap.m"
+    xmlns:core="sap.ui.core"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:wt="project_d.control">
     <Page
@@ -14,8 +15,43 @@
                 width="auto">
                 <content>
                     <ObjectHeader
+                        core:require="{
+                            Date: 'sap/ui/model/type/Date',
+                            Currency: 'sap/ui/model/type/Currency'
+                        }"
+                        responsive="true"
+                        fullScreenOptimized="true"
+                        number="{
+                            parts: [
+                                'invoice>ExtendedPrice',
+                                'view>/currency'
+                            ],
+                            type: 'Currency',
+                            formatOptions: {
+                                showMeasure: false
+                            }
+                        }"
+                        numberUnit="{view>/currency}"
                         intro="{invoice>ShipperName}"
-                        title="{invoice>ProductName}"/>
+                        title="{invoice>ProductName}">
+                        <attributes>
+                            <ObjectAttribute
+                                title="{i18n>quantityTitle}"
+                                text="{invoice>Quantity}"/>
+                            <ObjectAttribute
+                                title="{i18n>dateTitle}"
+                                text="{
+                                    path: 'invoice>ShippedDate',
+                                    type: 'Date',
+                                    formatOptions: {
+                                        style: 'long',
+                                        source: {
+                                            pattern: 'yyyy-MM-ddTHH:mm:ss'
+                                        }
+                                    }
+                                }"/>
+                        </attributes>
+                    </ObjectHeader>
                     <wt:ProductRating
                         id="rating"
                         class="sapUiSmallMarginBeginEnd"
