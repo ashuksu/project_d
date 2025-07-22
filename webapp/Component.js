@@ -10,6 +10,7 @@ sap.ui.define([
                 interfaces: ["sap.ui.core.IAsyncContentCreation"],
                 manifest: "json",
             },
+
             init() {
                 // call the init function of the parent
                 UIComponent.prototype.init.apply(this, arguments);
@@ -33,6 +34,10 @@ sap.ui.define([
                 // create the views based on the url/hash
                 this.getRouter().initialize();
             },
+
+            getContentDensityClass() {
+                return Device.support.touch ? "sapUiSizeCozy" : "sapUiSizeCompact";
+            }
         });
     }
 );
