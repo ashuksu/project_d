@@ -4,6 +4,15 @@
     xmlns:mvc="sap.ui.core.mvc"
     displayBlock="true">
     <Page title="{i18n>homePageTitle}">
+        <landmarkInfo>
+            <PageAccessibleLandmarkInfo
+                rootRole="Region"
+                rootLabel="{i18n>Overview_rootLabel}"
+                contentRole="Main"
+                contentLabel="{i18n>Overview_contentLabel}"
+                headerRole="Banner"
+                headerLabel="{i18n>Overview_headerLabel}"/>
+        </landmarkInfo>
         <content>
             <mvc:XMLView viewName="project_d.view.HelloPanel"/>
             <mvc:XMLView viewName="project_d.view.InvoiceList"/>

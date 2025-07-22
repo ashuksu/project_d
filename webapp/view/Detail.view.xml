@@ -12,7 +12,8 @@
             <Panel
                 headerText="{i18n>detailPaneTitle}"
                 class="sapUiResponsiveMargin"
-                width="auto">
+                width="auto"
+                accessibleRole="Region">
                 <content>
                     <ObjectHeader
                         core:require="{
