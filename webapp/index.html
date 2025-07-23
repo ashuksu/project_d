@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<title>Project D</title>
-	<link type="image/x-icon" href="favicon.ico" rel="shortcut icon">
-	<link type="image/x-icon" href="favicon.ico" rel="icon">
+	<meta charset="utf-8">
+	<title>UI5 TypeScript Project D</title>
+	<script
+		id="sap-ui-bootstrap"
+		src="resources/sap-ui-core.js"
+		data-sap-ui-theme="sap_horizon"
+		data-sap-ui-compat-version="edge"
+		data-sap-ui-async="true"
+		data-sap-ui-on-init="module:project_d/index"
+		data-sap-ui-resource-roots='{
+			"project_d": "./"
+		}'>
+	</script>
 </head>
 <body>
-<div>Hello World</div>
+	<div>Hello World</div>
 </body>
 </html>
