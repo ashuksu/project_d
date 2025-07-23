@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="178879a5-b59e-4625-9834-aac9cf2a9d65" name="Changes" comment="Step 8: Translatable Texts (TypeScript)">
+    <list default="true" id="178879a5-b59e-4625-9834-aac9cf2a9d65" name="Changes" comment="Step 9: Component Configuration (TypeScript)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/Component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/Component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/manifest.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +117,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1753271604466</updated>
-      <workItem from="1753271606016" duration="8976000" />
+      <workItem from="1753271606016" duration="10357000" />
     </task>
     <task id="LOCAL-00001" summary="Step 1: Hello World! (TypeScript)">
       <option name="closed" value="true" />
@@ -187,7 +191,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753284136059</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Step 9: Component Configuration (TypeScript)">
+      <option name="closed" value="true" />
+      <created>1753284988616</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1753284988616</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,7 +226,8 @@
     <MESSAGE value="Step 6: Modules (TypeScript)" />
     <MESSAGE value="Step 7: JSON Model (TypeScript)" />
     <MESSAGE value="Step 8: Translatable Texts (TypeScript)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Step 8: Translatable Texts (TypeScript)" />
+    <MESSAGE value="Step 9: Component Configuration (TypeScript)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Step 9: Component Configuration (TypeScript)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
