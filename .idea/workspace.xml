@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="178879a5-b59e-4625-9834-aac9cf2a9d65" name="Changes" comment="Step 6: Modules (TypeScript)">
+    <list default="true" id="178879a5-b59e-4625-9834-aac9cf2a9d65" name="Changes" comment="Step 7: JSON Model (TypeScript)">
+      <change afterPath="$PROJECT_DIR$/webapp/i18n/i18n.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/controller/App.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/controller/App.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/view/App.view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/view/App.view.xml" afterDir="false" />
@@ -115,7 +116,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1753271604466</updated>
-      <workItem from="1753271606016" duration="6680000" />
+      <workItem from="1753271606016" duration="8249000" />
     </task>
     <task id="LOCAL-00001" summary="Step 1: Hello World! (TypeScript)">
       <option name="closed" value="true" />
@@ -173,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753281371652</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Step 7: JSON Model (TypeScript)">
+      <option name="closed" value="true" />
+      <created>1753282577886</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1753282577886</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,7 +207,8 @@
     <MESSAGE value="Step 4: XML Views (TypeScript)" />
     <MESSAGE value="Step 5: Controllers (TypeScript)" />
     <MESSAGE value="Step 6: Modules (TypeScript)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Step 6: Modules (TypeScript)" />
+    <MESSAGE value="Step 7: JSON Model (TypeScript)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Step 7: JSON Model (TypeScript)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
