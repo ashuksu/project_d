@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="178879a5-b59e-4625-9834-aac9cf2a9d65" name="Changes" comment="Step 9: Component Configuration (TypeScript)">
+    <list default="true" id="178879a5-b59e-4625-9834-aac9cf2a9d65" name="Changes" comment="Step 10: Descriptor for Applications (TypeScript)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/Component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/Component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/view/App.view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/view/App.view.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +15,9 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="PREVIEW_PUSH_PROTECTED_ONLY" value="true" />
@@ -28,12 +28,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "ashuksu"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ashuksu&quot;
   }
-}]]></component>
+}</component>
   <component name="GitToolBoxStore">
     <option name="recentBranches">
       <RecentBranches>
@@ -59,16 +59,16 @@
       </RecentBranches>
     </option>
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:ashuksu/project_d.git",
-    "accountId": "9492ae7e-6ddb-4f96-8f8a-19d295e184ca"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:ashuksu/project_d.git&quot;,
+    &quot;accountId&quot;: &quot;9492ae7e-6ddb-4f96-8f8a-19d295e184ca&quot;
   }
-}]]></component>
+}</component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="30H5LmKlv8PiLvFWVG7mmgyCAe9" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -92,7 +92,7 @@
     "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
+    "settings.editor.selected.configurable": "preferences.sourceCode",
     "ts.external.directory.path": "/home/liutyi/projects/ui5/project_d/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -117,7 +117,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1753271604466</updated>
-      <workItem from="1753271606016" duration="10357000" />
+      <workItem from="1753271606016" duration="10519000" />
+      <workItem from="1753294219581" duration="668000" />
     </task>
     <task id="LOCAL-00001" summary="Step 1: Hello World! (TypeScript)">
       <option name="closed" value="true" />
@@ -199,7 +200,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753284988616</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Step 10: Descriptor for Applications (TypeScript)">
+      <option name="closed" value="true" />
+      <created>1753286106903</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1753286106903</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,7 +236,8 @@
     <MESSAGE value="Step 7: JSON Model (TypeScript)" />
     <MESSAGE value="Step 8: Translatable Texts (TypeScript)" />
     <MESSAGE value="Step 9: Component Configuration (TypeScript)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Step 9: Component Configuration (TypeScript)" />
+    <MESSAGE value="Step 10: Descriptor for Applications (TypeScript)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Step 10: Descriptor for Applications (TypeScript)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
