@@ -14,4 +14,4 @@ gh-init:
 gh-push:
 	git add . -f && \
 	git commit -am "Initial Commit $(shell date +%F\ %T)" || true && \
-	git push -u origin GIT_BRANCH --force
+	git push -u origin $(GIT_BRANCH) --force
