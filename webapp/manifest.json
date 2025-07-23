@@ -1,0 +1,11 @@
+{
+  "_version": "1.65.0",
+  "sap.app": {
+    "id": "project_d",
+    "type": "application",
+    "title": "UI5 TypeScript Project D",
+    "applicationVersion": {
+      "version": "1.0.0"
+    }
+  }
+}
