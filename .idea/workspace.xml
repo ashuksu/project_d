@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="178879a5-b59e-4625-9834-aac9cf2a9d65" name="Changes" comment="Step 3: Controls (TypeScript)">
+    <list default="true" id="178879a5-b59e-4625-9834-aac9cf2a9d65" name="Changes" comment="Step 4: XML Views (TypeScript)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/view/App.view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/view/App.view.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,10 +85,13 @@
     "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "/home/liutyi/projects/ui5/project_d",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
     "ts.external.directory.path": "/home/liutyi/projects/ui5/project_d/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -111,7 +116,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1753271604466</updated>
-      <workItem from="1753271606016" duration="3179000" />
+      <workItem from="1753271606016" duration="5256000" />
     </task>
     <task id="LOCAL-00001" summary="Step 1: Hello World! (TypeScript)">
       <option name="closed" value="true" />
@@ -145,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753278281885</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Step 4: XML Views (TypeScript)">
+      <option name="closed" value="true" />
+      <created>1753279023210</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1753279023210</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +180,11 @@
     <MESSAGE value="ts - compared with main" />
     <MESSAGE value="Step 2: Bootstrap (TypeScript)" />
     <MESSAGE value="Step 3: Controls (TypeScript)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Step 3: Controls (TypeScript)" />
+    <MESSAGE value="Step 4: XML Views (TypeScript)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Step 4: XML Views (TypeScript)" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -1,6 +1,8 @@
 <mvc:View
+    controllerName="project_d.controller.App"
     xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc">
-    <Text
-        text="Welcome to the SAPUI5 Application!" />
+    <Button
+        text="press me"
+        press=".onShowHello"/>
 </mvc:View>
