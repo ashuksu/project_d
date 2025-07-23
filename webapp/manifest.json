@@ -42,6 +42,10 @@
                     ],
                     "fallbackLocale": ""
                 }
+            },
+            "invoice": {
+                "type": "sap.ui.model.json.JSONModel",
+                "uri": "model/localInvoices.json"
             }
         },
         "rootView": {
