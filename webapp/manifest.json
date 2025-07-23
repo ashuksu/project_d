@@ -2,18 +2,18 @@
     "_version": "1.65.0",
     "sap.app": {
         "id": "project_d",
+        "title": "{{appTitle}}",
+        "description": "{{appDescription}}",
         "type": "application",
+        "applicationVersion": {
+            "version": "1.1.0"
+        },
         "i18n": {
             "bundleName": "project_d.i18n.i18n",
             "supportedLocales": [
                 ""
             ],
             "fallbackLocale": ""
-        },
-        "title": "{{appTitle}}",
-        "description": "{{appDescription}}",
-        "applicationVersion": {
-            "version": "1.0.0"
         }
     },
     "sap.ui": {
@@ -26,16 +26,11 @@
     },
     "sap.ui5": {
         "dependencies": {
-            "minUI5Version": "1.120",
+            "minUI5Version": "1.132",
             "libs": {
                 "sap.ui.core": {},
                 "sap.m": {}
             }
-        },
-        "rootView": {
-            "viewName": "project_d.view.App",
-            "type": "XML",
-            "id": "app"
         },
         "models": {
             "i18n": {
@@ -48,6 +43,24 @@
                     "fallbackLocale": ""
                 }
             }
+        },
+        "rootView": {
+            "viewName": "project_d.view.App",
+            "type": "XML",
+            "async": true,
+            "id": "app"
+        },
+        "resources": {
+            "css": [
+                {
+                    "uri": "css/style.css"
+                }
+            ]
+        },
+        "flexEnabled": true,
+        "contentDensities": {
+            "compact": false,
+            "cozy": false
         }
     }
 }
