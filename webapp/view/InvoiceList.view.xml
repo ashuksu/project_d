@@ -8,7 +8,18 @@
         headerText="{i18n>invoiceListTitle}"
         class="sapUiResponsiveMargin"
         width="auto"
-        items="{invoice>/Invoices}">
+        items="{
+            path: 'invoice>/Invoices',
+            sorter: [
+                {
+                    path: 'ShipperName',
+                    group: true
+                },
+                {
+                    path: 'ProductName'
+                }
+            ]
+        }">
         <headerToolbar>
             <Toolbar>
                 <Title text="{i18n>invoiceListTitle}"/>
@@ -35,7 +46,8 @@
                     }
                 }"
                 numberUnit="{view>/currency}"
-                numberState="{= ${invoice>ExtendedPrice} > 50 ? 'Error' : 'Success' }">
+                numberState="{= ${invoice>ExtendedPrice} > 50 ? (${invoice>ExtendedPrice} >= 1000 ? 'Success' : (${invoice>ExtendedPrice} >= 500 ? 'Warning' : 'Error')) : ${invoice>ExtendedPrice} > 9 ? 'Warning' : ${invoice>ExtendedPrice} > 8 ? 'Success' : ${invoice>ExtendedPrice} &lt; 3 ?  'None' : 'Information' }"
+                >
                 <firstStatus>
                     <ObjectStatus
                         core:require="{
