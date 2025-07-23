@@ -3,12 +3,14 @@ import MessageToast from "sap/m/MessageToast";
 import JSONModel from "sap/ui/model/json/JSONModel";
 import ResourceModel from "sap/ui/model/resource/ResourceModel";
 import ResourceBundle from "sap/base/i18n/ResourceBundle";
-
+import Dialog from "sap/m/Dialog";
 
 /**
- * @namespace project_d.controller.HelloPanel
+ * @namespace project_d.controller
  */
-export default class HelloPAnel extends Controller {
+export default class HelloPanel extends Controller {
+    private dialog: Dialog;
+
     onShowHello(): void {
         // read msg from i18n model
         // functions with generic return values require casting
@@ -17,5 +19,12 @@ export default class HelloPAnel extends Controller {
         const msg = resourceBundle.getText("helloMsg", [recipient]) || "no text defined";
         // show a message
         MessageToast.show(msg);
+    };
+
+    async onOpenDialog(): Promise<void> {
+        this.dialog ??= await this.loadFragment({
+            name: "project_d.view.HelloDialog"
+        }) as Dialog;
+        this.dialog.open();
     }
 };
