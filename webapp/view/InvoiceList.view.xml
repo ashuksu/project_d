@@ -4,10 +4,20 @@
     xmlns:core="sap.ui.core"
     xmlns:mvc="sap.ui.core.mvc">
     <List
+        id="invoiceList"
         headerText="{i18n>invoiceListTitle}"
         class="sapUiResponsiveMargin"
         width="auto"
         items="{invoice>/Invoices}">
+        <headerToolbar>
+            <Toolbar>
+                <Title text="{i18n>invoiceListTitle}"/>
+                <ToolbarSpacer/>
+                <SearchField
+                    width="50%"
+                    search=".onFilterInvoices"/>
+            </Toolbar>
+        </headerToolbar>
         <items>
             <ObjectListItem
                 core:require="{
