@@ -5,15 +5,20 @@
     <Panel
         headerText="{i18n>homePaneTitle}"
         class="sapUiResponsiveMargin"
-        width="auto">
+        width="auto"
+        expandable="{device>/system/phone}"
+        expanded="{= !${device>/system/phone} }">
         <content>
+            <Button
+                text=">= 1023"
+                class="sapUiSmallMarginEnd sapUiVisibleOnlyOnDesktop"/>
             <Button
                 id="helloDialogButton"
                 icon="sap-icon://action"
                 text="{i18n>openDialogButtonText}"
                 press=".onOpenDialog"
                 class="sapUiSmallMarginEnd myCustomButton"
-                />
+                visible="{= !${device>/system/phone} }"/>
             <Button
                 text="{i18n>showHelloButtonText}"
                 icon="sap-icon://activate"
