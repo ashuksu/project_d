@@ -1,0 +1,12 @@
+<mvc:View
+    controllerName="project_d.controller.App"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true">
+    <Page title="{i18n>homePageTitle}">
+        <content>
+            <mvc:XMLView viewName="project_d.view.HelloPanel" />
+            <mvc:XMLView viewName="project_d.view.InvoiceList" />
+        </content>
+    </Page>
+</mvc:View>
