@@ -17,6 +17,9 @@ export default {
     tests: {
         "unit/unitTests": {
             title: "UI5 TypeScript Project D - Unit Tests"
+        },
+        "integration/opaTests": {
+               title: "UI5 TypeScript Project D - Integration Tests"
         }
     }
 };
