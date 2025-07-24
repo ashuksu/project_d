@@ -3,14 +3,13 @@
     xmlns="sap.m"
     xmlns:core="sap.ui.core"
     xmlns:mvc="sap.ui.core.mvc">
-    <List
+    <Table
         id="invoiceList"
-        headerText="{i18n>invoiceListTitle}"
         class="sapUiResponsiveMargin"
         width="auto"
         items="{
-            path: 'invoice>/Invoices',
-            sorter: [
+				path : 'invoice>/Invoices',
+				sorter: [
                 {
                     path: 'ShipperName',
                     group: true
@@ -19,7 +18,7 @@
                     path: 'ProductName'
                 }
             ]
-        }">
+			}">
         <headerToolbar>
             <Toolbar>
                 <Title text="{i18n>invoiceListTitle}"/>
@@ -29,37 +28,72 @@
                     search=".onFilterInvoices"/>
             </Toolbar>
         </headerToolbar>
+        <columns>
+            <Column
+                hAlign="End"
+                minScreenWidth="Small"
+                demandPopin="true"
+                width="5em">
+                <Text text="{i18n>columnQuantity}"/>
+            </Column>
+            <Column>
+                <Text text="{i18n>columnName}"/>
+            </Column>
+            <Column
+                minScreenWidth="Small"
+                demandPopin="true">
+                <Text text="{i18n>columnStatus}"/>
+            </Column>
+            <Column
+                minScreenWidth="Tablet"
+                demandPopin="false">
+                <Text text="{i18n>columnSupplier}"/>
+            </Column>
+            <Column hAlign="End">
+                <Text text="{i18n>columnPrice}"/>
+            </Column>
+        </columns>
         <items>
-            <ObjectListItem
-                core:require="{
-                    Currency: 'sap/ui/model/type/Currency'
-                }"
-                title="{invoice>Quantity} x {invoice>ProductName}"
-                number="{
-                    parts: [
-                        'invoice>ExtendedPrice',
-                        'view>/currency'
-                    ],
-                    type: 'Currency',
-                    formatOptions: {
-                        showMeasure: false
-                    }
-                }"
-                numberUnit="{view>/currency}"
-                numberState="{= ${invoice>ExtendedPrice} > 50 ? (${invoice>ExtendedPrice} >= 1000 ? 'Success' : (${invoice>ExtendedPrice} >= 500 ? 'Warning' : 'Error')) : ${invoice>ExtendedPrice} > 9 ? 'Warning' : ${invoice>ExtendedPrice} > 8 ? 'Success' : ${invoice>ExtendedPrice} &lt; 3 ?  'None' : 'Information' }"
+            <ColumnListItem
                 type="Navigation"
-                press=".onPress" >
-                <firstStatus>
-                    <ObjectStatus
+                press=".onPress">
+                <cells>
+                    <ObjectNumber
+                        number="{invoice>Quantity}"
+                        emphasized="false"/>
+                    <ObjectIdentifier title="{invoice>ProductName}"/>
+                    <Text
                         core:require="{
-                            Formatter: 'project_d/model/CurrencyStatus'
-                        }"
+								Formatter: 'project_d/model/CurrencyStatus'
+						}"
                         text="{
-                            path: 'invoice>Status',
-                            formatter: 'Formatter.statusText.bind($controller)'
-                        }"/>
-                </firstStatus>
-            </ObjectListItem>
+								parts: [
+									'invoice>Status',
+									'i18n>invoiceStatusA',
+									'i18n>invoiceStatusB',
+									'i18n>invoiceStatusC'
+								],
+								formatter: 'Formatter.statusText.bind($controller)'
+						}"/>
+                    <Text text="{invoice>ShipperName}"/>
+                    <ObjectNumber
+                        core:require="{
+							Currency: 'sap/ui/model/type/Currency'
+						}"
+                        number="{
+							parts: [
+								'invoice>ExtendedPrice',
+								'view>/currency'
+							],
+							type: 'Currency',
+							formatOptions: {
+								showMeasure: false
+							}
+						}"
+                        unit="{view>/currency}"
+                        state="{= ${invoice>ExtendedPrice} > 50 ? (${invoice>ExtendedPrice} >= 1000 ? 'Success' : (${invoice>ExtendedPrice} >= 500 ? 'Warning' : 'Error')) : ${invoice>ExtendedPrice} > 9 ? 'Warning' : ${invoice>ExtendedPrice} > 8 ? 'Success' : ${invoice>ExtendedPrice} &lt; 3 ?  'None' : 'Information' }"/>
+                </cells>
+            </ColumnListItem>
         </items>
-    </List>
+    </Table>
 </mvc:View>
