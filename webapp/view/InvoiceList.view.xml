@@ -96,7 +96,8 @@
                                     }
                                 }"
                                 unit="{view>/currency}"
-                                state="{= ${invoice>ExtendedPrice} > 50 ? (${invoice>ExtendedPrice} >= 1000 ? 'Success' : (${invoice>ExtendedPrice} >= 500 ? 'Warning' : 'Error')) : ${invoice>ExtendedPrice} > 9 ? 'Warning' : ${invoice>ExtendedPrice} > 8 ? 'Success' : ${invoice>ExtendedPrice} &lt; 3 ?  'None' : 'Information' }"/>
+                                state="{= ${invoice>ExtendedPrice} > 50 ? (${invoice>ExtendedPrice} >= 1000 ? 'Success' : (${invoice>ExtendedPrice} >= 500 ? 'Warning' : 'Error')) : ${invoice>ExtendedPrice} > 9 ? 'Warning' : ${invoice>ExtendedPrice} > 8 ? 'Success' : ${invoice>ExtendedPrice} &lt; 3 ?  'None' : 'Information' }"
+                            />
                         </cells>
                     </ColumnListItem>
                 </items>
