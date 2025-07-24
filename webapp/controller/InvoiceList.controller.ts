@@ -5,6 +5,8 @@ import Filter from "sap/ui/model/Filter";
 import FilterOperator from "sap/ui/model/FilterOperator";
 import ListBinding from "sap/ui/model/ListBinding";
 import UIComponent from "sap/ui/core/UIComponent";
+import Event from "sap/ui/base/Event";
+import ObjectListItem from "sap/m/ObjectListItem";
 
 /**
  * @namespace project_d.controller
@@ -33,8 +35,12 @@ export default class App extends Controller {
         binding?.filter(filter);
     };
 
-    onPress(): void {
+    onPress(event: Event): void {
+        const item = event.getSource() as ObjectListItem;
+
         const router = UIComponent.getRouterFor(this);
-        router.navTo("detail");
+        router.navTo("detail", {
+            invoicePath: window.encodeURIComponent(item.getBindingContext("invoice").getPath().substring(1))
+        });
     };
 };
