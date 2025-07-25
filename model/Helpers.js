@@ -1,0 +1,2 @@
+sap.ui.define([],function(){"use strict";const t={formatting(t,...e){return typeof t==="string"?t.replace(/{(\d+)}/g,(t,n)=>typeof e[n]!=="undefined"?String(e[n]):t):""}};return t});
+//# sourceMappingURL=Helpers.js.map
