@@ -1,8 +1,7 @@
 <mvc:View
     controllerName="project_d.controller.HelloPanel"
     xmlns="sap.m"
-    xmlns:mvc="sap.ui.core.mvc"
->
+    xmlns:mvc="sap.ui.core.mvc">
     <Panel
         headerText="{i18n>homePaneTitle}"
         class="sapUiResponsiveMargin"
@@ -36,7 +35,7 @@
                     parts: ['i18n>inputDescription', '/recipient/name'],
                     formatter: '.formatting'
                 }"
-                class="sapUiSmallMargin sapThemeHightlight-asColor myCustomText"/>
+                class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"/>
         </content>
     </Panel>
 </mvc:View>

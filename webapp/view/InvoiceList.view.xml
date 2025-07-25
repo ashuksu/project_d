@@ -21,17 +21,18 @@
                 id="invoiceList"
                 width="auto"
                 items="{
-				path: 'invoice>/Invoices',
-				sorter: [
-                {
-                    path: 'ShipperName',
-                    group: true
-                },
-                {
-                    path: 'ProductName'
-                }
-            ]
-			}">
+				    path: 'invoice>/Invoices',
+                    sorter: [
+                    {
+                        path: 'ShipperName',
+                        group: true
+                    },
+                    {
+                        path: 'ProductName'
+                    }
+                ]
+                }"
+            >
                 <columns>
                     <Column
                         hAlign="End"
@@ -68,32 +69,32 @@
                             <ObjectIdentifier title="{invoice>ProductName}"/>
                             <Text
                                 core:require="{
-                            Formatter: 'project_d/model/CurrencyStatus'
-						}"
+                                    Formatter: 'project_d/model/CurrencyStatus'
+                                }"
                                 text="{
-                            parts: [
-                                'invoice>Status',
-                                'i18n>invoiceStatusA',
-                                'i18n>invoiceStatusB',
-                                'i18n>invoiceStatusC'
-                            ],
-                            formatter: 'Formatter.statusText.bind($controller)'
-						}"/>
+                                    parts: [
+                                        'invoice>Status',
+                                        'i18n>invoiceStatusA',
+                                        'i18n>invoiceStatusB',
+                                        'i18n>invoiceStatusC'
+                                    ],
+                                    formatter: 'Formatter.statusText.bind($controller)'
+                                }"/>
                             <Text text="{invoice>ShipperName}"/>
                             <ObjectNumber
                                 core:require="{
-							Currency: 'sap/ui/model/type/Currency'
-						}"
+                                    Currency: 'sap/ui/model/type/Currency'
+                                }"
                                 number="{
-							parts: [
-								'invoice>ExtendedPrice',
-								'view>/currency'
-							],
-							type: 'Currency',
-							formatOptions: {
-								showMeasure: false
-							}
-						}"
+                                    parts: [
+                                        'invoice>ExtendedPrice',
+                                        'view>/currency'
+                                    ],
+                                    type: 'Currency',
+                                    formatOptions: {
+                                        showMeasure: false
+                                    }
+                                }"
                                 unit="{view>/currency}"
                                 state="{= ${invoice>ExtendedPrice} > 50 ? (${invoice>ExtendedPrice} >= 1000 ? 'Success' : (${invoice>ExtendedPrice} >= 500 ? 'Warning' : 'Error')) : ${invoice>ExtendedPrice} > 9 ? 'Warning' : ${invoice>ExtendedPrice} > 8 ? 'Success' : ${invoice>ExtendedPrice} &lt; 3 ?  'None' : 'Information' }"
                             />
