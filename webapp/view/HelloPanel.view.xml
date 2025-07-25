@@ -21,7 +21,7 @@
                 class="sapUiSmallMarginEnd myCustomButton"
                 visible="{= !${device>/system/phone} }"/>
             <Button
-                text="{i18n>showHelloButtonText}"
+                text="{= ${i18n>buttonText}.replaceAll('{0}', ${/recipient/do}) }"
                 icon="sap-icon://activate"
                 press=".onShowHello"
                 class="sapUiSmallMarginEnd myCustomButton"/>
@@ -31,7 +31,10 @@
                 valueLiveUpdate="true"
                 width="60%"/>
             <FormattedText
-                htmlText="Hello {/recipient/name}"
+                htmlText="{
+                    parts: ['i18n>inputDescription', '/recipient/name'],
+                    formatter: '.formatting'
+                }"
                 class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"/>
         </content>
     </Panel>

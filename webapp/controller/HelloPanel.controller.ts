@@ -4,6 +4,7 @@ import JSONModel from "sap/ui/model/json/JSONModel";
 import ResourceModel from "sap/ui/model/resource/ResourceModel";
 import ResourceBundle from "sap/base/i18n/ResourceBundle";
 import Dialog from "sap/m/Dialog";
+import Helpers from "project_d/model/Helpers";
 
 /**
  * @namespace project_d.controller
@@ -20,6 +21,8 @@ export default class HelloPanel extends Controller {
         // show a message
         MessageToast.show(msg);
     };
+
+    formatting = Helpers.formatting;
 
     async onOpenDialog(): Promise<void> {
         this.dialog ??= await this.loadFragment({
