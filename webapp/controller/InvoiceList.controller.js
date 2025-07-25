@@ -16,6 +16,7 @@ sap.ui.define(
 
                 this.getView().setModel(oViewModel, "view");
             },
+
             onFilterInvoices(oEvent) {
                 const aFilter = [];
                 const sQuery = oEvent.getParameter("query");
@@ -28,6 +29,7 @@ sap.ui.define(
                 const oBinding = oList.getBinding("items");
                 oBinding.filter(aFilter);
             },
+
             onPress(oEvent) {
                 const oItem = oEvent.getSource();
                 const oRouter = this.getOwnerComponent().getRouter();

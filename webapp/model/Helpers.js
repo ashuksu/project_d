@@ -14,6 +14,6 @@ sap.ui.define([], () => {
       //   sText = sText.replaceAll(`{${i}}`, args[i]);
       // }
       // return sText;
-    },
+    }
   };
 });
