@@ -14,6 +14,7 @@ sap.ui.define(
         // How to use directly in Controller
         // console.log(Helpers.formatting("Hello, {0}!", "New World"));
       },
+
       onShowHello() {
         const oView = this.getView();
         const oData = oView.getModel();
@@ -24,9 +25,8 @@ sap.ui.define(
 
         MessageToast.show(sMsg);
       },
-      formatting(a, ...b) {
-        return Helpers.formatting(a, ...b);
-      },
+
+      formatting: Helpers.formatting,
 
       async onOpenDialog() {
         this.oDialog ??= await this.loadFragment({
@@ -35,6 +35,7 @@ sap.ui.define(
 
         this.oDialog.open();
       },
+
       onCloseDialog() {
         this.byId("helloDialog").close();
       },
