@@ -16,7 +16,9 @@ public/dist/
 logs/
 
 # IDE and OS specific
+.idea
 .idea/
+.idea/*
 .vscode/
 *.sublime-workspace
 *.sublime-project
