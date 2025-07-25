@@ -14,8 +14,8 @@
                 headerLabel="{i18n>Overview_headerLabel}"/>
         </landmarkInfo>
         <content>
-            <mvc:XMLView viewName="project_d.view.HelloPanel" />
-            <mvc:XMLView viewName="project_d.view.InvoiceList" />
+            <mvc:XMLView viewName="project_d.view.HelloPanel"/>
+            <mvc:XMLView viewName="project_d.view.InvoiceList"/>
         </content>
     </Page>
 </mvc:View>
